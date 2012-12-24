@@ -1,0 +1,19 @@
+{
+  "name": "jugglingdb-arango",
+  "version": "0.0.1",
+  "description": "ArangoDb adapter for jugglingdb",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodeunit test/arango.js"
+  },
+  "dependencies": {
+    "arango.client": "latest"
+  },
+  "devDependencies": {
+    "jugglingdb": "= 0.2.x",
+    "nodeunit": "latest"
+  },
+  "repository": "",
+  "author": "Andreas Streichardt <andreas.streichardt@gmail.com>",
+  "license": "MIT"
+}
