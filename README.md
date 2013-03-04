@@ -2,6 +2,8 @@
 
 Arango adapter for jugglingdb.
 
+[![Build Status](https://travis-ci.org/m0ppers/jugglingdb-arango.png)](https://travis-ci.org/m0ppers/jugglingdb-arango.png])
+
 ## Usage
 
 To use it you need `jugglingdb@0.2.x`.
