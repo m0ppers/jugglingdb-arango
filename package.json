@@ -7,7 +7,7 @@
     "test": "nodeunit test/arango.js"
   },
   "dependencies": {
-    "arango.client": "git://github.com/kesavkolla/arango-client.git"
+    "arango": "git://github.com/kaerus-component/arango.git#devel"
   },
   "devDependencies": {
     "jugglingdb": "= 0.2.x",
