@@ -35,6 +35,7 @@ ${ARANGOD} \
     --configuration none  \
     --server.endpoint tcp://127.0.0.1:8529 \
     --javascript.startup-directory ${ARANGODB_DIR}/js \
+    --javascript.app-path ${ARANGODB_DIR}/js/apps/ \
     --javascript.modules-path ${ARANGODB_DIR}/js/server/modules:${ARANGODB_DIR}/js/common/modules \
     --javascript.action-directory ${ARANGODB_DIR}/js/actions/system  \
     --database.maximal-journal-size 1048576  \
