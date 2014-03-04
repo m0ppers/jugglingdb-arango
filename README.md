@@ -2,7 +2,7 @@
 
 Arango adapter for jugglingdb.
 
-[![Build Status](https://travis-ci.org/m0ppers/jugglingdb-arango.png)](https://travis-ci.org/m0ppers/jugglingdb-arango.png])
+[<img src="https://secure.travis-ci.org/m0ppers/jugglingdb-arango.png" />](http://travis-ci.org/#!/m0ppers/jugglingdb-arango)
 
 ## Usage
 
