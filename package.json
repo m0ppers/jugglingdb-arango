@@ -4,14 +4,16 @@
   "description": "ArangoDb adapter for jugglingdb",
   "main": "index.js",
   "scripts": {
-    "test": "nodeunit test/arango.js"
+    "test": "node_modules/.bin/mocha test/*.test.js -R nyan"
   },
   "dependencies": {
     "arango.client": "latest"
   },
   "devDependencies": {
     "jugglingdb": "= 0.2.x",
-    "nodeunit": "latest"
+    "should": "~1.2.2",
+    "mocha": "~1.8.2",
+    "semicov": "~0.1.1-1"
   },
   "repository": "",
   "author": "Andreas Streichardt <andreas.streichardt@gmail.com>",
