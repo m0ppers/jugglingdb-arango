@@ -7,5 +7,3 @@ node_js:
 before_script:
   - chmod 777 ./test/setup_arangodb.sh
   - ./test/setup_arangodb.sh
-  - chmod 777 ./test/hackihack.sh
-  - ./test/hackihack.sh
