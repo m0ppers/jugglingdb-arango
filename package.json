@@ -15,7 +15,10 @@
     "mocha": "~1.8.2",
     "semicov": "~0.1.1-1"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m0ppers/jugglingdb-arango.git"
+  },
   "author": "Andreas Streichardt <andreas.streichardt@gmail.com>",
   "license": "MIT"
 }
