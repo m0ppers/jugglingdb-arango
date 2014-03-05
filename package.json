@@ -4,7 +4,7 @@
   "description": "ArangoDb adapter for jugglingdb",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/mocha test/*.test.js -R nyan"
+    "test": "node_modules/.bin/mocha test/*.test.js -R spec -t 10000"
   },
   "dependencies": {
     "arango": "~0.4.x"
