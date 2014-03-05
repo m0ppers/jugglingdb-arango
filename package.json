@@ -7,7 +7,7 @@
     "test": "node_modules/.bin/mocha test/*.test.js -R nyan"
   },
   "dependencies": {
-    "arango.client": "latest"
+    "arango": "git://github.com/kaerus-component/arango.git#0.4.1"
   },
   "devDependencies": {
     "jugglingdb": "= 0.2.x",
