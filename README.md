@@ -32,6 +32,8 @@ To use it you need `jugglingdb@0.2.x`.
 
 Make sure you have arango server running on default port, then run
 
+    docker run -p 8529:8529 -e ARANGO_NO_AUTH=1 -d --name arangodb-instance -d arangodb/arangodb
+    export ARANGO_HOST=`docker-machine ip your-docker-machine-name`
     npm test
 
 ## MIT License

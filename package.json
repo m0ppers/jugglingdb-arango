@@ -4,16 +4,18 @@
   "description": "ArangoDb adapter for jugglingdb",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/mocha test/*.test.js -R spec -t 10000"
+    "test": "node_modules/.bin/mocha test/*.test.js -R spec -t 1000",
+    "test-coverage": "istanbul cover node_modules/.bin/_mocha -- --reporter landing --no-exit --check-leaks test/",
+    "test-ci": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/"
   },
   "dependencies": {
     "arango": "~0.4.x"
   },
   "devDependencies": {
+    "istanbul": "^0.4.4",
     "jugglingdb": "= 0.2.x",
-    "should": "~1.2.2",
-    "mocha": "~1.8.2",
-    "semicov": "~0.1.1-1"
+    "mocha": "^2.5.3",
+    "should": "^9.0.2"
   },
   "repository": {
     "type": "git",

@@ -13,8 +13,9 @@ describe('arango specific tests', function() {
 
         db.automigrate(done);
     });
+
     it('should query by id: not found', function(done) {
-        User.find("User/23324", function(err, u) {
+        User.find('User/23324', function(err, u) {
             should.not.exist(u);
             should.not.exist(err);
             done();
