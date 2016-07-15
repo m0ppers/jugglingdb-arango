@@ -1,0 +1,18 @@
+machine:
+  node:
+    version: 4.4.7
+
+dependencies:
+  override:
+    - wget https://www.arangodb.com/repositories/arangodb2/xUbuntu_12.04/Release.key
+    - sudo apt-key add - < Release.key
+    - echo 'deb https://www.arangodb.com/repositories/arangodb2/xUbuntu_12.04/ /' | sudo tee /etc/apt/sources.list.d/arangodb.list
+    - sudo apt-get install apt-transport-https
+    - sudo apt-get update
+    - sudo apt-get install arangodb
+
+test:
+  override:
+    - nvm use 4 && npm run test-ci
+    - nvm use 5 && npm run test-ci
+    - npm i coveralls && export COVERALLS_GIT_COMMIT=`git rev-parse HEAD` && cat ./coverage/lcov.info | coveralls
