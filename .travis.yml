@@ -11,5 +11,5 @@ before_install:
 services:
   - docker
 
-env:
-  - ARANGO_HOST=127.0.0.1
+script:
+  - ARANGO_HOST=127.0.0.1 npm test
