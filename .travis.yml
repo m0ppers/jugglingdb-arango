@@ -1,9 +1,15 @@
 language: node_js
 
 node_js:
-  - 0.8
-  - 0.10
+  - 4.4
+  - 5.11
+  - 6
 
-before_script:
-  - chmod 777 ./test/setup_arangodb.sh
-  - ./test/setup_arangodb.sh
+before_install:
+  - docker run -e ARANGO_NO_AUTH=1 -p 8529:8529 arangodb:3.0.4
+
+services:
+  - docker
+
+script:
+  - ARANGO_HOST=127.0.0.1 npm test
