@@ -6,20 +6,11 @@ Arango adapter for jugglingdb.
 
 ## Usage
 
-To use it you need `jugglingdb@0.2.x`.
-
 1. Setup dependencies in `package.json`:
 
-    ```json
-    {
-      ...
-      "dependencies": {
-        "jugglingdb": "0.2.x",
-        "jugglingdb-arango": "latest"
-      },
-      ...
-    }
-    ```
+```bash
+npm install --save jugglingdb-arango
+```
 
 2. Use:
 
@@ -38,7 +29,7 @@ Make sure you have arango server running on default port, then run
 
 ## MIT License
 
-    Copyright (C) 2012 by Andreas Streichardt
+    Copyright (C) 2012-2016 by Andreas Streichardt
     
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
