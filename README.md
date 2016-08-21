@@ -8,9 +8,9 @@ Arango adapter for jugglingdb.
 
 1. Setup dependencies in `package.json`:
 
-```bash
-npm install --save jugglingdb-arango
-```
+    ```bash
+    npm install --save jugglingdb-arango
+    ```
 
 2. Use:
 
