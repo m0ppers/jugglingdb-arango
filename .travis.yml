@@ -7,6 +7,7 @@ node_js:
 
 before_install:
   - docker run -d -e ARANGO_NO_AUTH=1 -p 8529:8529 arangodb:3.0.4
+  - while true; do curl 127.0.0.1:8529/_api/version && exit 0; done
 
 services:
   - docker
